@@ -57,5 +57,13 @@ class Startup
         end.uniq
     end
 
+    def big_investers
+        investors.select do |investors|
+            if investors.total_worth > 1000000000
+                investors
+            end
+        end
+    end
+
 
 end

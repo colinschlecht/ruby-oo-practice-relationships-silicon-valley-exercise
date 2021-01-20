@@ -9,7 +9,7 @@ end
 
 startup2 = Startup.new("Facebook", "Mark", "www.facebook.com")
 startup1 = Startup.new("Myspace", "Tom", "www.myspace.com")
-startup3 = Startup.new("Boundless Immigration", "Sagar", "www.BI.com")
+startup3 = Startup.new("Boundless Immigration", "Sagar", "immigration")
 
 vc1 = VentureCapitalist.new("Colin", 1)
 vc5 = VentureCapitalist.new("2", 1)
@@ -17,7 +17,9 @@ vc2 = VentureCapitalist.new("Peypey", 2)
 vc3 = VentureCapitalist.new("George", 10000000000)
 vc4 = VentureCapitalist.new("Carl", 100000000000)
 
-fr1 = FundingRound.new(startup1,vc1, "Angel", 10)
+fr1 = FundingRound.new(startup1,vc3, "Angel", 1000000)
+fr4 = FundingRound.new(startup3,vc3, "Angel", 60000)
+fr5 = FundingRound.new(startup3,vc3, "Angel", 50000)
 fr2 = FundingRound.new(startup2,vc2, "Angel", 10)
 fr3 = FundingRound.new(startup1,vc2, "Angel", 10)
 
